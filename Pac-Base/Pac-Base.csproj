@@ -77,6 +77,7 @@
     <Content Include="Cardinals.aspx" />
     <Content Include="Cougars.aspx" />
     <Content Include="Ducks.aspx" />
+    <Content Include="FunStats.aspx" />
     <Content Include="GoldenBears.aspx" />
     <Content Include="Huskies.aspx" />
     <Content Include="Roster.aspx" />
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="Ducks.aspx.designer.cs">
       <DependentUpon>Ducks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FunStats.aspx.cs">
+      <DependentUpon>FunStats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FunStats.aspx.designer.cs">
+      <DependentUpon>FunStats.aspx</DependentUpon>
     </Compile>
     <Compile Include="GoldenBears.aspx.cs">
       <DependentUpon>GoldenBears.aspx</DependentUpon>

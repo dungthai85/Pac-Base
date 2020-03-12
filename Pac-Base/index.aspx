@@ -13,6 +13,9 @@
         .auto-style2 {
             text-align: center;
         }
+        .auto-style3 {
+            font-size: large;
+        }
     </style>
 </head>
 <body>
@@ -129,7 +132,24 @@
             <asp:Button ID="Button12" runat="server" OnClick="Button1_Click" Text="Cougars" />
 
         </p>
+        <p class="auto-style2">
+            <b id="docs-internal-guid-6b099a37-7fff-277e-250a-3995c767da09" style="font-weight: normal;">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="FunStats.aspx" style="font-size: x-large">Click Here For Fun Stats!</asp:HyperLink>
+            </b>
+
+        </p>
+        <meta charset="utf-8" />
+        <b id="docs-internal-guid-6b099a37-7fff-277e-250a-3995c767da09" style="font-weight: normal;">
+        <p class="auto-style2" dir="ltr" style="line-height: 1.38; text-indent: 36pt; margin-top: 0pt; margin-bottom: 0pt;">
+            <span class="auto-style3" style="font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap; text-align: left;">Welcome to our Pac-12 database.&nbsp; Pac-Base was built in response to requests from fans who support their favorite team from the Pac-12 Conference. We wanted to accomplish many of the capabilities that other sports systems can do. This includes allowing fans to be able to view any information about their favorite team including performances, the matches, the coach of the team, and track players’ statistics. We want to provide the information about their preferred team in the Pac-12 quickly and expertly. Meaning our database is structured efficiently to provide the most positive experience. In addition, using data analysis to provide a winning percentage prediction of the future match depending on the users 
+            chosen teams.&nbsp; Pac-base only covers all football teams from the Pac-12 Conference instead of from the NCAA league. Our database stores information about matches, season records, coaches, and players in Pac-12 teams after 2011. On our website, users can select their favorite team and view the information, and use the prediction functionality for the next match.</span></p>
+        <p class="auto-style2" dir="ltr" style="line-height:1.38;text-indent: 36pt;margin-top:0pt;margin-bottom:0pt;">
+            &nbsp;</p>
+        <p class="auto-style2" dir="ltr" style="line-height:1.38;text-indent: 36pt;margin-top:0pt;margin-bottom:0pt;">
+            &nbsp;</p>
+        </b>
     </form>
+    <br class="Apple-interchange-newline" />
 
     </body>
 </html>
