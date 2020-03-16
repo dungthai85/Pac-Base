@@ -54,6 +54,9 @@
             </asp:Menu>
         </div>
         <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://pac12-database-270119.appspot.com/" style="font-size: x-large">Game Predictions</asp:HyperLink>
+        <br />
+        <br />
         ALL TEAMS, COACHES, AND COACHES OVERALL WIN PERCENTAGE:<br />
         <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource4">
             <Columns>
@@ -84,6 +87,23 @@ WHERE  5 &lt;  o.sack
 ORDER BY o.sack DESC
 "></asp:SqlDataSource>
         <br />
+        <br />
+        MAX CONFERENCE WINS AND YEAR ACHIEVED:<br />
+        <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2">
+            <Columns>
+                <asp:BoundField DataField="TName" HeaderText="Team" SortExpression="TName" />
+                
+                <asp:BoundField DataField="CWins" HeaderText="Max Conference Wins" SortExpression="CWins" />
+                <asp:BoundField DataField="SYear" HeaderText="Year" SortExpression="SYear" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT t.TName, s.SYear, s.CWins
+ FROM TEAM t JOIN SEASONREC s on t.Tid = S.Tid
+ WHERE CWINS = (SELECT MAX(CWINS)
+               FROM SEASONREC r
+               WHERE s.Tid = r.Tid)
+ ORDER BY SYEAR;
+"></asp:SqlDataSource>
         <br />
         <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="Select w.University_Name, w.Team_Name, w.Coach_First_Name, w.Coach_Last_Name, w.Start_Year, q.Percentage FROM(SELECT t.Uname University_Name, t.Tname Team_Name, c.FName Coach_First_Name, c.LName Coach_Last_Name, c.SYear Start_Year
 FROM TEAM t FULL JOIN COACH c on t.Tid = c.Tid) AS  w LEFT JOIN (SELECT distinct(c.FName) FirstName, c.LName LastName,t.TName TeamName, t.UName University, c.SYear StartYear, 
