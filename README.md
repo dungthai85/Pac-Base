@@ -6,10 +6,14 @@ http://pacbase.azurewebsites.net/index.aspx
 
  (Phase II) 
     Create the relational model database including all non-trivial relational schemas
+    
     Create a sample data for the database
+    
     Create, execute and maintain non-trivial SQL statements required for the database
 
  (Phase III) 
     Create a conceptual model for the database
+    
     Normalize database design in Boyce-Codd Normal Form
+    
     Create a front-end sample Web interface that interacts with the database
