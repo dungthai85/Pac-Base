@@ -5,6 +5,7 @@ http://pacbase.azurewebsites.net/index.aspx
  (Phase I) Choose an application idea that requires the use of a database
 
  (Phase II) 
+ 
     Create the relational model database including all non-trivial relational schemas
     
     Create a sample data for the database
@@ -12,6 +13,7 @@ http://pacbase.azurewebsites.net/index.aspx
     Create, execute and maintain non-trivial SQL statements required for the database
 
  (Phase III) 
+ 
     Create a conceptual model for the database
     
     Normalize database design in Boyce-Codd Normal Form
