@@ -81,9 +81,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\pac-base.mdf" />
-    <Content Include="App_Data\pac-base_log.ldf">
-      <DependentUpon>pac-base.mdf</DependentUpon>
+    <Content Include="App_Data\LocalPacBase.mdf" />
+    <Content Include="App_Data\LocalPacBase_log.ldf">
+      <DependentUpon>LocalPacBase.mdf</DependentUpon>
     </Content>
     <Content Include="Beavers.aspx" />
     <Content Include="Bruins.aspx" />
@@ -212,6 +212,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Pac-Base - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Pacbase - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
